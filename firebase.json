@@ -1,0 +1,19 @@
+{
+  "functions": {},
+  "emulators": {
+    "hosting": {
+      "host": "localhost",
+      "port": "5100"
+    }
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "webapp"
+      }
+    ]
+  }
+}
